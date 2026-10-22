@@ -36,6 +36,11 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          BASE_PATH: /antula/
+          VITE_INSFORGE_URL: ${{ secrets.VITE_INSFORGE_URL }}
+          VITE_INSFORGE_BASE_URL: ${{ secrets.VITE_INSFORGE_URL }}
+          VITE_INSFORGE_ANON_KEY: ${{ secrets.VITE_INSFORGE_ANON_KEY }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
