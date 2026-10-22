@@ -2,8 +2,8 @@ import { createClient } from '@insforge/sdk';
 import { Reclamo, Cuadrilla, OrdenTrabajo } from '../types';
 
 // Default configuration from environment variables or defaults
-const DEFAULT_BASE_URL = import.meta.env.VITE_INSFORGE_BASE_URL || 'https://antula.region.insforge.app';
-const DEFAULT_ANON_KEY = import.meta.env.VITE_INSFORGE_ANON_KEY || 'insforge-anon-antula-demo-key';
+const DEFAULT_BASE_URL = import.meta.env.VITE_INSFORGE_URL || import.meta.env.VITE_INSFORGE_BASE_URL || 'https://ii8ya6m7.us-west.insforge.app';
+const DEFAULT_ANON_KEY = import.meta.env.VITE_INSFORGE_ANON_KEY || 'anon_0a8639ca8874039ac2fcecbaa8c1eef5b0a3cf179c8e78ed8b89f02e1f14cef2';
 
 export interface InsForgeConfig {
   baseUrl: string;
